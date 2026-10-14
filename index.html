@@ -1485,11 +1485,11 @@ Cheers,
         platform: "Google Search Console",
         targetUrl: "https://search.google.com/search-console",
         linkType: "tech",
-        status: "not_started",
-        liveUrl: "",
+        status: "live",
+        liveUrl: "https://search.google.com/search-console",
         anchorText: "N/A",
         landingPage: "https://careernest.taqnik.in/",
-        notes: "Required before link building. Verify domain or URL prefix via existing HTML meta tag or DNS TXT.",
+        notes: "Verified via URL prefix property setup on Oct 14, 2026.",
         auditNotes: "Audit Finding: Core Web Vitals and GSC not connected. Essential prerequisite to track crawler index status and indexation requests."
       },
       {
@@ -1501,11 +1501,11 @@ Cheers,
         platform: "Google Search Console",
         targetUrl: "https://search.google.com/search-console",
         linkType: "tech",
-        status: "not_started",
-        liveUrl: "",
+        status: "live",
+        liveUrl: "https://careernest.taqnik.in/sitemap.xml",
         anchorText: "N/A",
         landingPage: "https://careernest.taqnik.in/sitemap.xml",
-        notes: "Submit https://careernest.taqnik.in/sitemap.xml once canonical extensionless URLs are fixed.",
+        notes: "Submitted https://careernest.taqnik.in/sitemap.xml to Google Search Console successfully.",
         auditNotes: "Audit Finding: Sitemaps previously contained redirecting .html URLs. Re-submit only after Phase 1 clean URL fix."
       },
       {
@@ -1533,11 +1533,11 @@ Cheers,
         platform: "Bing Webmaster Tools",
         targetUrl: "https://www.bing.com/webmasters",
         linkType: "tech",
-        status: "not_started",
-        liveUrl: "",
+        status: "live",
+        liveUrl: "https://www.bing.com/webmasters",
         anchorText: "N/A",
         landingPage: "https://careernest.taqnik.in/",
-        notes: "Audit Finding #1 Note: Connect Bing Webmaster Tools. Can import site directly from Google Search Console in 1 click.",
+        notes: "Verified on Oct 14, 2026 via HTML Meta Tag: <meta name='msvalidate.01' content='29EF113E8133FDA7DC6A371C461CA874' />",
         auditNotes: "Bing powers Yahoo and Copilot search. Must be treated as a separate dedicated task from Google Search Console."
       },
       {
@@ -1549,11 +1549,11 @@ Cheers,
         platform: "Bing Webmaster Tools",
         targetUrl: "https://www.bing.com/webmasters",
         linkType: "tech",
-        status: "not_started",
-        liveUrl: "",
+        status: "live",
+        liveUrl: "https://careernest.taqnik.in/sitemap.xml",
         anchorText: "N/A",
         landingPage: "https://careernest.taqnik.in/sitemap.xml",
-        notes: "Submit clean sitemap to Bing crawler queue.",
+        notes: "Submitted https://careernest.taqnik.in/sitemap.xml. Crawled with Status: Success, 21 URLs discovered on Oct 14, 2026.",
         auditNotes: "Ensures Bingbot crawls extensionless canonical targets."
       },
       {
@@ -1647,11 +1647,11 @@ Cheers,
         platform: "App Advisor",
         targetUrl: "https://appadvisor.in/launch-your-ai-tool",
         linkType: "dofollow",
-        status: "not_started",
-        liveUrl: "",
+        status: "pitched",
+        liveUrl: "https://appadvisor.in/submit-product",
         anchorText: "CareerNest AI Resume Builder",
         landingPage: "https://careernest.taqnik.in/",
-        notes: "Verified in audit: Free submission, reviewed within 2 working days.",
+        notes: "Submitted on Oct 14, 2026. In 48-hour review queue for free launch & dofollow link.",
         auditNotes: "Audit Note #3: Verified: free, reviewed in 2 working days."
       },
       {
@@ -1663,11 +1663,11 @@ Cheers,
         platform: "App Advisor",
         targetUrl: "https://appadvisor.in/",
         linkType: "dofollow",
-        status: "not_started",
+        status: "in_progress",
         liveUrl: "",
         anchorText: "CareerNest",
         landingPage: "https://careernest.taqnik.in/",
-        notes: "Check listing after 48 hours and log final URL.",
+        notes: "Awaiting approval email after 48-hour review period.",
         auditNotes: "Confirm listing page is public and indexed."
       },
       {
@@ -1679,11 +1679,11 @@ Cheers,
         platform: "Koncept AI",
         targetUrl: "https://konceptai.in/directory/submit",
         linkType: "dofollow",
-        status: "not_started",
-        liveUrl: "",
+        status: "pitched",
+        liveUrl: "https://konceptai.in/directory/submit",
         anchorText: "CareerNest ATS Scanner",
         landingPage: "https://careernest.taqnik.in/",
-        notes: "Verified in audit: Free only if you show their badge (or ₹399 one-time). Decide whether to host badge or pay.",
+        notes: "Submitted on Oct 14, 2026 with footer badge agreement.",
         auditNotes: "Audit Note #4: Verified: free only if you show their badge (or ₹399)."
       },
       {
@@ -2953,7 +2953,7 @@ Cheers,
     ];
 
     // Local Storage Management
-    const STORAGE_KEY = 'careernest_backlink_tasks_v2';
+    const STORAGE_KEY = 'careernest_backlink_tasks_v3';
 
     function loadTasks() {
       try {
