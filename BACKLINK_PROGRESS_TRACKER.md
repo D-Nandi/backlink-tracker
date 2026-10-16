@@ -10,7 +10,7 @@
 
 | Tier / Category | Total Opportunities | Completed / In Review | Pending | Status |
 |---|:---:|:---:|:---:|:---:|
-| **Tier A: Quick Wins (Low Effort, 1-2 Days)** | 9 | 3 (Google/Bing, AppAdvisor, KonceptAI) | 6 | 🟡 Active |
+| **Tier A: Quick Wins (Low Effort, 1-2 Days)** | 9 | 4 (Google/Bing, AppAdvisor, KonceptAI, Product Hunt) | 5 | 🟡 Active |
 | **Tier B: High Authority Content & PR** | 8 | 0 | 8 | ⚪ Upcoming |
 | **Tier C: Community & Traffic Channels** | 5 | 0 | 5 | ⚪ Upcoming |
 | **Tier D: University & Placement Cells (.ac.in)** | 4 | 0 | 4 | ⚪ Upcoming |
@@ -49,6 +49,11 @@
     <img src="https://konceptai.in/badges/koncept-light.svg" alt="Featured on Koncept AI Directory" width="180" height="40" style="display:inline-block; vertical-align:middle; margin-top:8px;" />
   </a>
   ```
+
+### 5. Product Hunt (DA 91)
+- **Status:** ✅ Submitted (Scheduled / In Review)
+- **URL:** `https://www.producthunt.com/`
+- **Impact:** Top tier brand recognition, referral traffic, and high authority backlinks.
 
 ---
 

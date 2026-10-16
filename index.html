@@ -7,6 +7,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Firebase Web SDK (Compat mode for zero-build static HTML) -->
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
   <style>
     :root {
       --bg-primary: #090d16;
@@ -968,6 +972,43 @@
         grid-template-columns: 1fr;
       }
     }
+    /* Cloud Sync Badge */
+    .cloud-sync-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 6px 12px;
+      border-radius: var(--radius-full);
+      font-size: 12px;
+      font-weight: 600;
+      background: rgba(16, 185, 129, 0.12);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      color: var(--accent-emerald);
+      user-select: none;
+      transition: all 0.3s ease;
+    }
+    .cloud-sync-badge.connecting {
+      background: rgba(245, 158, 11, 0.12);
+      border-color: rgba(245, 158, 11, 0.3);
+      color: var(--accent-amber);
+    }
+    .cloud-sync-badge.offline {
+      background: rgba(244, 63, 94, 0.12);
+      border-color: rgba(244, 63, 94, 0.3);
+      color: var(--accent-rose);
+    }
+    .sync-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: currentColor;
+      box-shadow: 0 0 8px currentColor;
+      animation: pulseSync 2s infinite ease-in-out;
+    }
+    @keyframes pulseSync {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.35; transform: scale(0.8); }
+    }
   </style>
 </head>
 <body>
@@ -984,6 +1025,10 @@
         </div>
       </div>
       <div class="header-actions">
+        <div class="cloud-sync-badge connecting" id="cloudSyncStatus" title="Real-time Cloud Sync with Firebase Firestore">
+          <span class="sync-dot"></span>
+          <span id="cloudSyncText">Connecting Cloud...</span>
+        </div>
         <button class="btn btn-emerald" id="exportCsvBtn" title="Export to CSV for Excel/Google Sheets">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
           Export CSV
@@ -1711,11 +1756,11 @@ Cheers,
         platform: "Product Hunt",
         targetUrl: "https://www.producthunt.com/",
         linkType: "dofollow",
-        status: "not_started",
-        liveUrl: "",
+        status: "pitched",
+        liveUrl: "https://www.producthunt.com/",
         anchorText: "CareerNest",
         landingPage: "https://careernest.taqnik.in/",
-        notes: "Create founder profile, link Twitter and LinkedIn, and claim product profile.",
+        notes: "Product submitted / scheduled on Product Hunt on Oct 15, 2026.",
         auditNotes: "Audit Note #5: Plan the launch day. Good for referrals plus a high-authority profile link."
       },
       {
@@ -1727,11 +1772,11 @@ Cheers,
         platform: "Product Hunt Upcoming",
         targetUrl: "https://www.producthunt.com/ship",
         linkType: "dofollow",
-        status: "not_started",
+        status: "in_progress",
         liveUrl: "",
         anchorText: "CareerNest - AI Career & Resume Toolkit",
         landingPage: "https://careernest.taqnik.in/",
-        notes: "Publish teaser page with headline: 'Go from Resume to Offer with AI'.",
+        notes: "Submitted product listing. Prepare community engagement on launch.",
         auditNotes: "Gains early subscriber links and an active Product Hunt indexable page."
       },
       {
@@ -2952,8 +2997,41 @@ Cheers,
       }
     ];
 
-    // Local Storage Management
+    // Local Storage & Cloud Sync Management
     const STORAGE_KEY = 'careernest_backlink_tasks_v3';
+
+    // Firebase Configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyBfOAP4zKTD_Rg7HDS6dhxGn0din4KpsVQ",
+      authDomain: "careernest-tracker.firebaseapp.com",
+      projectId: "careernest-tracker",
+      storageBucket: "careernest-tracker.firebasestorage.app",
+      messagingSenderId: "465551195553",
+      appId: "1:465551195553:web:3d07808650807f3fd19fe0",
+      measurementId: "G-KMELR9B8JT"
+    };
+
+    let db = null;
+    let isCloudReady = false;
+
+    function updateCloudStatus(statusClass, statusText) {
+      const badge = document.getElementById('cloudSyncStatus');
+      const text = document.getElementById('cloudSyncText');
+      if (badge && text) {
+        badge.className = 'cloud-sync-badge ' + (statusClass || '');
+        text.textContent = statusText;
+      }
+    }
+
+    // Initialize Firebase Compat
+    try {
+      if (typeof firebase !== 'undefined') {
+        firebase.initializeApp(firebaseConfig);
+        db = firebase.firestore();
+      }
+    } catch (e) {
+      console.warn("Firebase initialization notice:", e);
+    }
 
     function loadTasks() {
       try {
@@ -2961,7 +3039,6 @@ Cheers,
         if (stored) {
           const parsed = JSON.parse(stored);
           if (Array.isArray(parsed) && parsed.length > 0) {
-            // Merge with DEFAULT_TASKS to ensure schema completeness
             return DEFAULT_TASKS.map(def => {
               const found = parsed.find(p => p.id === def.id);
               return found ? { ...def, ...found } : def;
@@ -2979,10 +3056,121 @@ Cheers,
     let currentView = 'table';
     let activeModalTaskId = null;
 
-    function saveTasks() {
+    // Save a single task update (both locally and to Firebase cloud)
+    function saveSingleTask(taskId, updates) {
+      const item = tasksData.find(t => t.id === taskId);
+      if (item) {
+        Object.assign(item, updates);
+      }
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(tasksData));
+      updateKPIs();
+
+      if (db) {
+        db.collection('careernest_tasks').doc(taskId).set(updates, { merge: true }).catch(err => {
+          console.warn('Cloud sync error for task ' + taskId, err);
+        });
+      }
+    }
+
+    // Save entire dataset (with optional full cloud batch sync)
+    function saveTasks(syncAllToCloud = false) {
       localStorage.setItem(STORAGE_KEY, JSON.stringify(tasksData));
       updateKPIs();
       renderCurrentView();
+
+      if (syncAllToCloud && db) {
+        const batch = db.batch();
+        tasksData.forEach(t => {
+          const ref = db.collection('careernest_tasks').doc(t.id);
+          batch.set(ref, t, { merge: true });
+        });
+        batch.commit().then(() => {
+          showToast('Synced all 63 tasks with Firebase cloud!');
+        }).catch(err => {
+          console.error('Batch cloud sync error:', err);
+        });
+      }
+    }
+
+    // Real-time Firestore sync listener
+    function initCloudSync() {
+      if (!db) {
+        updateCloudStatus('offline', 'Local Offline');
+        return;
+      }
+
+      updateCloudStatus('connecting', 'Connecting...');
+      const colRef = db.collection('careernest_tasks');
+
+      colRef.onSnapshot((snapshot) => {
+        if (snapshot.empty) {
+          // First run: Seed Firestore with default audit tasks
+          updateCloudStatus('connecting', 'Seeding 63 tasks...');
+          const batch = db.batch();
+          tasksData.forEach(task => {
+            const ref = colRef.doc(task.id);
+            batch.set(ref, task);
+          });
+          batch.commit().then(() => {
+            updateCloudStatus('', 'Live Cloud Synced');
+            showToast('Initialized database in Firebase!');
+          }).catch(err => {
+            console.error('Failed to seed cloud database:', err);
+            updateCloudStatus('offline', 'Cloud Error');
+          });
+          return;
+        }
+
+        // Apply incoming real-time updates from other team members
+        let hasChanges = false;
+        snapshot.docChanges().forEach(change => {
+          const cloudTask = change.doc.data();
+          const localTask = tasksData.find(t => t.id === (cloudTask.id || change.doc.id));
+          if (localTask) {
+            let isDiff = false;
+            for (let k in cloudTask) {
+              if (localTask[k] !== cloudTask[k]) {
+                isDiff = true;
+                break;
+              }
+            }
+            if (isDiff) {
+              Object.assign(localTask, cloudTask);
+              hasChanges = true;
+            }
+          } else {
+            tasksData.push(cloudTask);
+            hasChanges = true;
+          }
+        });
+
+        if (hasChanges) {
+          localStorage.setItem(STORAGE_KEY, JSON.stringify(tasksData));
+          updateKPIs();
+
+          // Don't interrupt user if currently actively typing in a form input
+          const activeEl = document.activeElement;
+          const isUserTyping = activeEl && (activeEl.tagName === 'INPUT' || activeEl.tagName === 'TEXTAREA');
+          if (!isUserTyping) {
+            renderCurrentView();
+          } else {
+            // Update non-focused inputs and selects dynamically
+            snapshot.docChanges().forEach(change => {
+              const cloudTask = change.doc.data();
+              const sel = document.querySelector(`.status-select[data-id="${cloudTask.id}"]`);
+              if (sel && sel !== activeEl && cloudTask.status) {
+                sel.value = cloudTask.status;
+                sel.setAttribute('data-val', cloudTask.status);
+              }
+            });
+          }
+        }
+
+        updateCloudStatus('', 'Live Cloud Synced');
+      }, (err) => {
+        console.error('Firestore real-time listener error:', err);
+        updateCloudStatus('offline', 'Cloud Offline');
+      });
     }
 
     // KPI & Stats Calculator
@@ -3129,7 +3317,7 @@ Cheers,
           const item = tasksData.find(t => t.id === id);
           if (item) {
             item.status = newVal;
-            saveTasks();
+            saveSingleTask(id, { status: newVal });
             showToast(`Status updated: ${item.id} → ${newVal.replace('_', ' ').toUpperCase()}`);
           }
         });
@@ -3143,10 +3331,13 @@ Cheers,
           const item = tasksData.find(t => t.id === id);
           if (item) {
             item.liveUrl = val;
+            const updates = { liveUrl: val };
             if (val && item.status !== 'live') {
               item.status = 'live'; // auto-upgrade to live if link provided
+              updates.status = 'live';
             }
-            saveTasks();
+            saveSingleTask(id, updates);
+            renderCurrentView();
             showToast(`Saved live backlink for ${item.id}`);
           }
         });
@@ -3303,7 +3494,14 @@ Cheers,
         task.landingPage = document.getElementById('modalLandingPage').value.trim();
         task.notes = document.getElementById('modalNotes').value.trim();
 
-        saveTasks();
+        saveSingleTask(task.id, {
+          status: task.status,
+          liveUrl: task.liveUrl,
+          anchorText: task.anchorText,
+          landingPage: task.landingPage,
+          notes: task.notes
+        });
+        renderCurrentView();
         closeTaskModal();
         showToast(`Saved task details: ${task.id}`);
       }
@@ -3369,8 +3567,8 @@ Cheers,
           const imported = JSON.parse(event.target.result);
           if (Array.isArray(imported)) {
             tasksData = imported;
-            saveTasks();
-            showToast('Database imported successfully!');
+            saveTasks(true);
+            showToast('Database imported and synced to cloud!');
           } else {
             alert('Invalid JSON file format.');
           }
@@ -3383,10 +3581,10 @@ Cheers,
 
     // Reset Defaults
     function resetData() {
-      if (confirm('Are you sure you want to reset all tasks to initial audit defaults? Custom notes and live link URLs will be erased.')) {
+      if (confirm('Are you sure you want to reset all tasks to initial audit defaults? Custom notes and live link URLs will be erased from local storage and Firebase.')) {
         localStorage.removeItem(STORAGE_KEY);
         tasksData = JSON.parse(JSON.stringify(DEFAULT_TASKS));
-        saveTasks();
+        saveTasks(true);
         showToast('Tracker reset to audit defaults.');
       }
     }
@@ -3410,6 +3608,9 @@ Cheers,
 
       updateKPIs();
       renderCurrentView();
+
+      // Start Real-Time Firebase Cloud Listener
+      initCloudSync();
 
       // Tier tabs
       document.querySelectorAll('#tierTabs .nav-tab-btn').forEach(btn => {
