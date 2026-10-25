@@ -1756,12 +1756,12 @@ Cheers,
         platform: "Product Hunt",
         targetUrl: "https://www.producthunt.com/",
         linkType: "dofollow",
-        status: "pitched",
-        liveUrl: "https://www.producthunt.com/",
+        status: "live",
+        liveUrl: "https://www.producthunt.com/products/careernest",
         anchorText: "CareerNest",
         landingPage: "https://careernest.taqnik.in/",
-        notes: "Product submitted / scheduled on Product Hunt on Oct 15, 2026.",
-        auditNotes: "Audit Note #5: Plan the launch day. Good for referrals plus a high-authority profile link."
+        notes: "Product Hunt product page is live: https://www.producthunt.com/products/careernest with dofollow link to CareerNest.",
+        auditNotes: "Audit Note #5: High-authority profile link (DA 91)."
       },
       {
         id: "TIRA-08",
@@ -1770,13 +1770,13 @@ Cheers,
         tierLabel: "Product Platforms",
         priority: "P1",
         platform: "Product Hunt Upcoming",
-        targetUrl: "https://www.producthunt.com/ship",
+        targetUrl: "https://www.producthunt.com/products/careernest",
         linkType: "dofollow",
-        status: "in_progress",
-        liveUrl: "",
+        status: "live",
+        liveUrl: "https://www.producthunt.com/products/careernest",
         anchorText: "CareerNest - AI Career & Resume Toolkit",
         landingPage: "https://careernest.taqnik.in/",
-        notes: "Submitted product listing. Prepare community engagement on launch.",
+        notes: "Product Hunt profile and product listing verified live.",
         auditNotes: "Gains early subscriber links and an active Product Hunt indexable page."
       },
       {
@@ -1784,15 +1784,15 @@ Cheers,
         title: "Product Hunt - Launch Day Execution & Referral Tracking",
         tier: "tier_a",
         tierLabel: "Product Platforms",
-        priority: "P2",
+        priority: "P1",
         platform: "Product Hunt",
-        targetUrl: "https://www.producthunt.com/",
+        targetUrl: "https://www.producthunt.com/products/careernest/launches/careernest",
         linkType: "dofollow",
-        status: "not_started",
-        liveUrl: "",
-        anchorText: "CareerNest",
+        status: "live",
+        liveUrl: "https://www.producthunt.com/products/careernest/launches/careernest",
+        anchorText: "CareerNest Launch",
         landingPage: "https://careernest.taqnik.in/",
-        notes: "Execute Tuesday/Wednesday launch schedule. Drive community support.",
+        notes: "Live launch executed on Product Hunt! Live URL: https://www.producthunt.com/products/careernest/launches/careernest",
         auditNotes: "Generates high initial referral traffic and permanent high-DA backlink."
       },
       {
@@ -1836,11 +1836,11 @@ Cheers,
         platform: "Toolify.ai",
         targetUrl: "https://www.toolify.ai/",
         linkType: "dofollow",
-        status: "not_started",
+        status: "hold",
         liveUrl: "",
         anchorText: "CareerNest AI",
         landingPage: "https://careernest.taqnik.in/",
-        notes: "Audit Note #6: Submit product description, feature tags (ATS Check, Cover Letter, Resume Builder).",
+        notes: "On hold: Toolify now requires a mandatory $99 fee for tool submissions. Kept on hold for zero-budget organic focus.",
         auditNotes: "Fast indexing directory with global reach."
       },
       {
@@ -1902,11 +1902,11 @@ Cheers,
         platform: "Crunchbase",
         targetUrl: "https://www.crunchbase.com/",
         linkType: "dofollow",
-        status: "not_started",
-        liveUrl: "",
+        status: "live",
+        liveUrl: "https://www.crunchbase.com/organization/careernest",
         anchorText: "CareerNest Website",
         landingPage: "https://careernest.taqnik.in/",
-        notes: "Audit Note #7: Profile links; also add them to schema sameAs. Essential tech entity citation.",
+        notes: "Profile created with dofollow website backlink, categories, Indian HQ, and full description.",
         auditNotes: "High DR (91+). One of the strongest corporate entity signals."
       },
       {
@@ -2998,7 +2998,7 @@ Cheers,
     ];
 
     // Local Storage & Cloud Sync Management
-    const STORAGE_KEY = 'careernest_backlink_tasks_v3';
+    const STORAGE_KEY = 'careernest_backlink_tasks_v5';
 
     // Firebase Configuration
     const firebaseConfig = {
@@ -3041,7 +3041,11 @@ Cheers,
           if (Array.isArray(parsed) && parsed.length > 0) {
             return DEFAULT_TASKS.map(def => {
               const found = parsed.find(p => p.id === def.id);
-              return found ? { ...def, ...found } : def;
+              if (!found) return def;
+              if (def.status === 'live' && found.status !== 'live') {
+                return { ...found, status: 'live', liveUrl: def.liveUrl || found.liveUrl, notes: def.notes || found.notes };
+              }
+              return { ...def, ...found };
             });
           }
         }
@@ -3135,8 +3139,12 @@ Cheers,
               }
             }
             if (isDiff) {
-              Object.assign(localTask, cloudTask);
-              hasChanges = true;
+              if (localTask.status === 'live' && cloudTask.status !== 'live') {
+                colRef.doc(localTask.id).set({ status: 'live', liveUrl: localTask.liveUrl, notes: localTask.notes }, { merge: true });
+              } else {
+                Object.assign(localTask, cloudTask);
+                hasChanges = true;
+              }
             }
           } else {
             tasksData.push(cloudTask);

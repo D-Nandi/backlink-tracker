@@ -1,7 +1,7 @@
 # CareerNest — Backlink & SEO Authority Tracker
 
 **Target Website:** `https://careernest.taqnik.in/`  
-**Last Updated:** October 14, 2026  
+**Last Updated:** October 25, 2026  
 **Status:** In Progress (Tier A: Quick Wins)
 
 ---
@@ -10,7 +10,7 @@
 
 | Tier / Category | Total Opportunities | Completed / In Review | Pending | Status |
 |---|:---:|:---:|:---:|:---:|
-| **Tier A: Quick Wins (Low Effort, 1-2 Days)** | 9 | 4 (Google/Bing, AppAdvisor, KonceptAI, Product Hunt) | 5 | 🟡 Active |
+| **Tier A: Quick Wins (Low Effort, 1-2 Days)** | 9 | 5 (Google/Bing, AppAdvisor, KonceptAI, Product Hunt, Crunchbase) | 4 | 🟡 Active |
 | **Tier B: High Authority Content & PR** | 8 | 0 | 8 | ⚪ Upcoming |
 | **Tier C: Community & Traffic Channels** | 5 | 0 | 5 | ⚪ Upcoming |
 | **Tier D: University & Placement Cells (.ac.in)** | 4 | 0 | 4 | ⚪ Upcoming |
@@ -51,51 +51,51 @@
   ```
 
 ### 5. Product Hunt (DA 91)
-- **Status:** ✅ Submitted (Scheduled / In Review)
-- **URL:** `https://www.producthunt.com/`
-- **Impact:** Top tier brand recognition, referral traffic, and high authority backlinks.
+- **Status:** ✅ Completed & Live
+- **Product Page:** [https://www.producthunt.com/products/careernest](https://www.producthunt.com/products/careernest)
+- **Launch Page:** [https://www.producthunt.com/products/careernest/launches/careernest](https://www.producthunt.com/products/careernest/launches/careernest)
+- **Tagline:** `Free AI Resume Builder, ATS Score Checker & Career Toolkit.`
+- **Primary Website Link:** `https://careernest.taqnik.in/`
+- **Hunter / Maker:** Gunjan 007 (`@gunjan_007`)
+- **Topics:** Hiring, Software Engineering, Career
+- **Impact:** DA 91 high-authority do-follow backlink, instant referral traffic, and brand discoverability.
+
+### 6. Crunchbase Company Profile (DA 91)
+- **Status:** ✅ Completed & Profile Created
+- **URL:** `https://www.crunchbase.com/`
+- **Details:** Organization profile created for CareerNest with website backlink `https://careernest.taqnik.in/`, India HQ, categories (AI, Career Planning, EdTech, IT), and full description.
+- **Impact:** Instant DA 91 high-authority do-follow backlink, knowledge graph authority, and investor/industry discovery.
 
 ---
 
-## 🎯 3. Next Immediate Steps (Starting Point for Tomorrow)
+## 🎯 3. Next Immediate Steps (Resume Here Directly)
 
-When resuming tomorrow, start right here:
+When resuming, start right here:
 
-### Step 1: Crunchbase Company Profile (Instant DA 91 Backlink)
-- **Status:** 🟡 Up Next
-- **Action URL:** [https://www.crunchbase.com/add-new](https://www.crunchbase.com/add-new)
-- **Fields to Fill:**
-  - **Organization Name:** `CareerNest`
-  - **Website:** `https://careernest.taqnik.in/`
-  - **Location:** `India`
-  - **Categories:** `Artificial Intelligence`, `Career Planning`, `Human Resources`, `EdTech`
-  - **Short Description:** `CareerNest is an AI-powered career platform providing ATS resume optimization, salary benchmarking, and career tools for Indian job seekers.`
-  - **Company Type:** `For Profit` | **Status:** `Active`
-
-### Step 2: Toolify.ai Listing
-- **Status:** ⚪ Pending
-- **URL:** [https://www.toolify.ai/submit](https://www.toolify.ai/submit)
-- **Purpose:** World's largest AI directory for high organic search referral traffic.
-
-### Step 3: "There's An AI For That" (TAAFT)
-- **Status:** ⚪ Pending
+### Step 1: "There's An AI For That" (TAAFT) — 🟡 UP NEXT
+- **Status:** 🟡 **Up Next (Resume Here)**
 - **URL:** [https://theresanaiforthat.com/submit/](https://theresanaiforthat.com/submit/)
-- **Purpose:** Top-tier global AI directory with permanent indexing.
+- **Note:** Marked by user to complete first when resuming.
+- **Purpose:** Top-tier global AI directory with permanent indexing & high organic traffic.
 
-### Step 4: TechProductIndia
-- **Status:** ⚪ Pending (Check if site resolves or test via mobile network/VPN)
+### Step 2: TechProductIndia
+- **Status:** ⚪ Pending
 - **URL:** [https://techproductindia.com/signup](https://techproductindia.com/signup)
 - **Purpose:** Free permanent SEO listing for Made-in-India software.
+
+### Step 3: Toolify.ai (On Hold / Skipped)
+- **Status:** 🔴 On Hold ($99 Paywall)
+- **Notes:** Toolify now requires a mandatory $99 fee for listings. Kept on hold for zero-cost organic strategy.
 
 ---
 
 ## 📋 4. Remaining Roadmap Breakdown
 
 ### Tier A: Remaining Quick Wins
-- [ ] **Crunchbase** (DA 91 company profile)
+- [x] **Crunchbase** (DA 91 company profile created)
+- [x] **Product Hunt Launch** (Live launch page & product profile created: DA 91)
 - [ ] **LinkedIn Company Page** (Brand authority + `sameAs` schema link)
 - [ ] **Toolify.ai & TAAFT** (Top AI directories)
-- [ ] **Product Hunt Launch Prep** (Build teaser page / schedule launch)
 - [ ] **Startup India Profile & SuperLaunch** (`superlaunch.in/submit`)
 - [ ] **SaaS Review Sites** (G2, Capterra, SaaSworthy, GoodFirms free vendor listings)
 
