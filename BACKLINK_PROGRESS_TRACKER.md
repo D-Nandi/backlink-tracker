@@ -12,7 +12,7 @@
 |---|:---:|:---:|:---:|:---:|
 | **Tier A: Quick Wins (Low Effort, 1-2 Days)** | 9 | 5 (Google/Bing, AppAdvisor, KonceptAI, Product Hunt, Crunchbase) | 4 | 🟡 Active |
 | **Tier B: High Authority Content & PR** | 8 | 0 | 8 | ⚪ Upcoming |
-| **Tier C: Community & Traffic Channels** | 5 | 0 | 5 | ⚪ Upcoming |
+| **Tier C: Community & Traffic Channels** | 6 | 3 (Indie Hackers, Reddit, Hacker News) | 3 | 🟡 Active |
 | **Tier D: University & Placement Cells (.ac.in)** | 4 | 0 | 4 | ⚪ Upcoming |
 | **Tier E: Local Citations & Mentions** | 3 | 0 | 3 | ⚪ Upcoming |
 
@@ -66,57 +66,111 @@
 - **Details:** Organization profile created for CareerNest with website backlink `https://careernest.taqnik.in/`, India HQ, categories (AI, Career Planning, EdTech, IT), and full description.
 - **Impact:** Instant DA 91 high-authority do-follow backlink, knowledge graph authority, and investor/industry discovery.
 
+### 7. Indie Hackers Product Profile (DA 84)
+- **Status:** ✅ Completed & Live
+- **Product Page:** [https://www.indiehackers.com/product/careernest](https://www.indiehackers.com/product/careernest)
+- **Tagline:** `Free AI Resume Builder, ATS Score Checker & Career Toolkit.`
+- **Primary Website Link:** `https://careernest.taqnik.in/` (via "VISIT WEBSITE" button)
+- **Impact:** Permanent DA 84+ backlink, community discoverability, and foundation for milestone updates.
+
+### 8. Reddit r/SideProject Community Showcase (DA 91)
+- **Status:** ✅ Completed & Live
+- **Platform:** [https://www.reddit.com/r/SideProject](https://www.reddit.com/r/SideProject)
+- **Title:** `I built a 100% free AI ATS Checker & CV Builder after seeing friends get filtered out by HR parsers — would love your honest feedback!`
+- **Primary Website Link:** `https://careernest.taqnik.in/`
+- **Impact:** High-intent community discussion, referral traffic, user feedback, and DA 91 forum backlink.
+
+### 9. Hacker News Launch (DA 92)
+- **Status:** ✅ Completed & Live
+- **Platform:** [https://news.ycombinator.com/submitted?id=debjeetnandi007](https://news.ycombinator.com/submitted?id=debjeetnandi007)
+- **Title:** `CareerNest – Free AI ATS resume checker and builder`
+- **Primary Website Link:** `https://careernest.taqnik.in/`
+- **Impact:** DA 92+ domain authority backlink, developer community discovery, and technical visibility.
+
 ---
 
-## 🎯 3. Next Immediate Steps (Resume Here Directly)
+## 🎯 3. Next Immediate Steps (100% FREE Opportunities Only)
 
-When resuming, start right here:
+Start directly here with zero cost investment:
 
-### Step 1: "There's An AI For That" (TAAFT) — 🟡 UP NEXT
+### Step 1: TechProductIndia — 🟡 UP NEXT
 - **Status:** 🟡 **Up Next (Resume Here)**
-- **URL:** [https://theresanaiforthat.com/submit/](https://theresanaiforthat.com/submit/)
-- **Note:** Marked by user to complete first when resuming.
-- **Purpose:** Top-tier global AI directory with permanent indexing & high organic traffic.
-
-### Step 2: TechProductIndia
-- **Status:** ⚪ Pending
 - **URL:** [https://techproductindia.com/signup](https://techproductindia.com/signup)
-- **Purpose:** Free permanent SEO listing for Made-in-India software.
+- **Cost:** **100% Free**
+- **Purpose:** Permanent SEO listing for Made-in-India software with dofollow backlink.
 
-### Step 3: Toolify.ai (On Hold / Skipped)
-- **Status:** 🔴 On Hold ($99 Paywall)
-- **Notes:** Toolify now requires a mandatory $99 fee for listings. Kept on hold for zero-cost organic strategy.
+### Step 2: SuperLaunch (Indian Startup Directory)
+- **Status:** ⚪ Pending
+- **URL:** [https://superlaunch.in/submit](https://superlaunch.in/submit)
+- **Cost:** **100% Free**
+- **Purpose:** Free startup directory listing and organic visibility for Indian tools.
+
+### Step 3: AlternativeTo (Crowdsourced Software Alternative)
+- **Status:** ⚪ Pending
+- **URL:** [https://alternativeto.net/](https://alternativeto.net/)
+- **Cost:** **100% Free (DA 81)**
+- **Purpose:** List CareerNest as a free, privacy-friendly alternative to *Jobscan*, *Resume Worded*, and *Novoresume*. Drives massive high-intent comparison traffic.
+
+### Step 4: TopAI.tools
+- **Status:** ⚪ Pending
+- **URL:** [https://topai.tools/submit](https://topai.tools/submit)
+- **Cost:** **100% Free**
+- **Purpose:** Free AI tool discovery directory with clean search crawl indexing.
+
+### Step 5: LinkedIn Company Page & GitHub Organization
+- **Status:** ⚪ Pending
+- **Cost:** **100% Free (DA 98 & DA 96)**
+- **Purpose:** Essential entity building for Google Knowledge Graph and Organization schema validation.
 
 ---
 
-## 📋 4. Remaining Roadmap Breakdown
+## 📋 4. Remaining Roadmap Breakdown (Free First)
 
-### Tier A: Remaining Quick Wins
+### Tier A: Remaining Quick Wins (100% Free)
 - [x] **Crunchbase** (DA 91 company profile created)
 - [x] **Product Hunt Launch** (Live launch page & product profile created: DA 91)
-- [ ] **LinkedIn Company Page** (Brand authority + `sameAs` schema link)
-- [ ] **Toolify.ai & TAAFT** (Top AI directories)
-- [ ] **Startup India Profile & SuperLaunch** (`superlaunch.in/submit`)
+- [ ] **TechProductIndia** (Free Made-in-India listing)
+- [ ] **SuperLaunch** (Free Indian startup index)
+- [ ] **AlternativeTo** (Free crowdsourced comparison page: DA 81)
+- [ ] **TopAI.tools** (Free AI directory listing)
+- [ ] **LinkedIn Company Page** (Brand authority + `sameAs` schema link: DA 98)
+- [ ] **GitHub Org Profile** (DA 96 profile with open-source ATS template)
 - [ ] **SaaS Review Sites** (G2, Capterra, SaaSworthy, GoodFirms free vendor listings)
 
-### Tier B: Content & PR (Medium Effort, Highest Value Links)
+### Tier B: Content & PR (100% Free, Highest Value Links)
 - [ ] Pitch **Naukri Blog Guest Post** (`naukri.com/blog/write-for-naukri/`)
 - [ ] Pitch **Jobify India** (`jobifyindia.com/write-for-us/`)
 - [ ] Pitch **TBD Jobs** (`tbdjobs.in/writeforus`)
 - [ ] Pitch **Alliance International** (`allianceinternational.co.in/write-for-us/`)
 - [ ] Pitch **HireBH** (`hirebh.com/write-for-us/`)
-- [ ] Register on **Featured.com** (ex-HARO) & **Qwoted** for journalist queries
+- [ ] Register on **Featured.com** (ex-HARO free tier) & **Qwoted** for journalist queries
 - [ ] Monitor **#JournoRequest** on X for career/recruitment journalist quotes
 
-### Tier C: Community & Traffic
+### Tier C: Community & Traffic (100% Free)
 - [ ] Answer 5 high-intent questions on **Quora** (topics: "ATS resume India", "Fresher resume format")
 - [ ] Share helpful insights on **r/developersIndia**, **r/Indian_Academia**, and **r/resumes**
+- [x] **Reddit r/SideProject Showcase** (Live community discussion & feedback post: [https://www.reddit.com/r/SideProject](https://www.reddit.com/r/SideProject) - DA 91)
+- [x] **Hacker News Launch** (Live developer discussion & launch post: [https://news.ycombinator.com/submitted?id=debjeetnandi007](https://news.ycombinator.com/submitted?id=debjeetnandi007) - DA 92)
+- [x] **Indie Hackers Product Profile** (Live product profile with direct backlink: [https://www.indiehackers.com/product/careernest](https://www.indiehackers.com/product/careernest) - DA 84)
 - [ ] Publish syndicated guides on **Dev.to / Hashnode / Medium** with canonical tags back to `careernest.taqnik.in`
 
-### Tier D: College & Placement Cell Partnerships (.ac.in / .edu.in)
+### Tier D: College & Placement Cell Partnerships (100% Free, .ac.in / .edu.in)
 - [ ] Target Indian engineering & management colleges' T&P cells
 - [ ] Pitch "CareerNest for Campus" (free ATS workshops + resume tools)
 - [ ] Secure placement resource links via Google dork searches (`site:ac.in "placement cell" "resume"`)
+
+---
+
+## ⛔ 6. Paid / Paywalled Directories (Deferred to Bottom / On Hold)
+
+These directories require upfront review or submission payments. They are deferred to the very bottom so you can complete all free, high-authority channels first:
+
+| Platform | Paywall Cost | Status | Notes |
+|---|:---:|:---:|---|
+| **There's An AI For That (TAAFT)** | $49 to $347+ | 🔴 On Hold | Mandatory listing fee introduced; free submission queue discontinued. |
+| **Toolify.ai** | $99 | 🔴 On Hold | Mandatory fee for product addition. |
+| **Uneed** | $14.99 to $29.99 | 🔴 On Hold | Free waiting queue closed/backlogged; fast-track launch fee required. |
+| **Futurepedia Fast-Track** | $247 to $497 | 🔴 Skipped (Paid) | Standard queue kept free, but fast-track paywalled. |
 
 ---
 
