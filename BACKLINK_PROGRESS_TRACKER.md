@@ -10,7 +10,7 @@
 
 | Tier / Category | Total Opportunities | Completed / In Review | Pending | Status |
 |---|:---:|:---:|:---:|:---:|
-| **Tier A: Quick Wins (Low Effort, 1-2 Days)** | 9 | 5 (Google/Bing, AppAdvisor, KonceptAI, Product Hunt, Crunchbase) | 4 | 🟡 Active |
+| **Tier A: Quick Wins (Low Effort, 1-2 Days)** | 9 | 7 (Google/Bing, AppAdvisor, KonceptAI, Product Hunt, Crunchbase, TechProductIndia, AlternativeTo) | 2 | 🟡 Active |
 | **Tier B: High Authority Content & PR** | 8 | 0 | 8 | ⚪ Upcoming |
 | **Tier C: Community & Traffic Channels** | 6 | 3 (Indie Hackers, Reddit, Hacker News) | 3 | 🟡 Active |
 | **Tier D: University & Placement Cells (.ac.in)** | 4 | 0 | 4 | ⚪ Upcoming |
@@ -87,37 +87,37 @@
 - **Primary Website Link:** `https://careernest.taqnik.in/`
 - **Impact:** DA 92+ domain authority backlink, developer community discovery, and technical visibility.
 
+### 10. TechProductIndia (Made-in-India Software Directory)
+- **Status:** ⏳ Submitted (In Review)
+- **URL:** [https://techproductindia.com/signup](https://techproductindia.com/signup)
+- **Result:** Account created & product submitted for permanent free listing. Human review turnaround ~24 hours.
+- **Reward:** Permanent Made-in-India product listing with indexed dofollow backlink.
+
+### 11. AlternativeTo (Crowdsourced Software Alternative - DA 81)
+- **Status:** ⏳ Submitted (Queued for Community Review)
+- **URL:** [https://alternativeto.net/manage-item](https://alternativeto.net/manage-item)
+- **Result:** CareerNest profile & application submitted to free community queue with alternative mappings to Jobscan, Resume Worded, Novoresume, Teal, and Zety.
+- **Reward:** High-intent comparison search traffic, high DA 81 profile backlink.
+
 ---
 
 ## 🎯 3. Next Immediate Steps (100% FREE Opportunities Only)
 
 Start directly here with zero cost investment:
 
-### Step 1: TechProductIndia — 🟡 UP NEXT
+### Step 1: TopAI.tools — 🟡 UP NEXT
 - **Status:** 🟡 **Up Next (Resume Here)**
-- **URL:** [https://techproductindia.com/signup](https://techproductindia.com/signup)
-- **Cost:** **100% Free**
-- **Purpose:** Permanent SEO listing for Made-in-India software with dofollow backlink.
-
-### Step 2: SuperLaunch (Indian Startup Directory)
-- **Status:** ⚪ Pending
-- **URL:** [https://superlaunch.in/submit](https://superlaunch.in/submit)
-- **Cost:** **100% Free**
-- **Purpose:** Free startup directory listing and organic visibility for Indian tools.
-
-### Step 3: AlternativeTo (Crowdsourced Software Alternative)
-- **Status:** ⚪ Pending
-- **URL:** [https://alternativeto.net/](https://alternativeto.net/)
-- **Cost:** **100% Free (DA 81)**
-- **Purpose:** List CareerNest as a free, privacy-friendly alternative to *Jobscan*, *Resume Worded*, and *Novoresume*. Drives massive high-intent comparison traffic.
-
-### Step 4: TopAI.tools
-- **Status:** ⚪ Pending
 - **URL:** [https://topai.tools/submit](https://topai.tools/submit)
 - **Cost:** **100% Free**
 - **Purpose:** Free AI tool discovery directory with clean search crawl indexing.
 
-### Step 5: LinkedIn Company Page & GitHub Organization
+### Step 2: SuperLaunch (Indian Startup Directory)
+- **Status:** ⚪ On Hold (Requires DPIIT Certificate Upload)
+- **URL:** [https://superlaunch.in/submit](https://superlaunch.in/submit)
+- **Cost:** **100% Free**
+- **Purpose:** Startup India verified badge and directory listing.
+
+### Step 3: LinkedIn Company Page & GitHub Organization
 - **Status:** ⚪ Pending
 - **Cost:** **100% Free (DA 98 & DA 96)**
 - **Purpose:** Essential entity building for Google Knowledge Graph and Organization schema validation.
@@ -129,10 +129,10 @@ Start directly here with zero cost investment:
 ### Tier A: Remaining Quick Wins (100% Free)
 - [x] **Crunchbase** (DA 91 company profile created)
 - [x] **Product Hunt Launch** (Live launch page & product profile created: DA 91)
-- [ ] **TechProductIndia** (Free Made-in-India listing)
-- [ ] **SuperLaunch** (Free Indian startup index)
-- [ ] **AlternativeTo** (Free crowdsourced comparison page: DA 81)
+- [x] **TechProductIndia** (Submitted & In Review - Free Made-in-India listing)
+- [x] **AlternativeTo** (Submitted & Queued - DA 81 crowdsourced comparison page)
 - [ ] **TopAI.tools** (Free AI directory listing)
+- [ ] **SuperLaunch** (Free Indian startup index - On hold for DPIIT)
 - [ ] **LinkedIn Company Page** (Brand authority + `sameAs` schema link: DA 98)
 - [ ] **GitHub Org Profile** (DA 96 profile with open-source ATS template)
 - [ ] **SaaS Review Sites** (G2, Capterra, SaaSworthy, GoodFirms free vendor listings)
