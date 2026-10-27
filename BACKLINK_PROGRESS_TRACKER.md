@@ -10,7 +10,7 @@
 
 | Tier / Category | Total Opportunities | Completed / In Review | Pending | Status |
 |---|:---:|:---:|:---:|:---:|
-| **Tier A: Quick Wins (Low Effort, 1-2 Days)** | 9 | 7 (Google/Bing, AppAdvisor, KonceptAI, Product Hunt, Crunchbase, TechProductIndia, AlternativeTo) | 2 | 🟡 Active |
+| **Tier A: Quick Wins (Low Effort, 1-2 Days)** | 9 | 8 (Google/Bing, AppAdvisor, KonceptAI, Product Hunt, Crunchbase, TechProductIndia, AlternativeTo, SaaSHub) | 1 | 🟡 Active |
 | **Tier B: High Authority Content & PR** | 8 | 0 | 8 | ⚪ Upcoming |
 | **Tier C: Community & Traffic Channels** | 6 | 3 (Indie Hackers, Reddit, Hacker News) | 3 | 🟡 Active |
 | **Tier D: University & Placement Cells (.ac.in)** | 4 | 0 | 4 | ⚪ Upcoming |
@@ -99,28 +99,37 @@
 - **Result:** CareerNest profile & application submitted to free community queue with alternative mappings to Jobscan, Resume Worded, Novoresume, Teal, and Zety.
 - **Reward:** High-intent comparison search traffic, high DA 81 profile backlink.
 
+### 12. SaaSHub Product Profile (DA 70+)
+- **Status:** ⏳ Submitted & Profile Created (Pending Moderator Approval)
+- **Product Page URL:** [https://www.saashub.com/careernest](https://www.saashub.com/careernest)
+- **Category:** Productivity / Human Resources
+- **Location:** Purulia, India
+- **Tagline:** `Go from resume to hire: tailor to job descriptions, check ATS scores, and ace HR interviews with CareerNest's AI toolkit.`
+- **Mapped Competitors:** Jobscan, Resume Worded, Novoresume, Teal, Zety
+- **Reward:** High-authority DA 70+ software comparison pages ("CareerNest vs Jobscan"), buyer-intent referral traffic, and permanent indexed dofollow backlink.
+
 ---
 
 ## 🎯 3. Next Immediate Steps (100% FREE Opportunities Only)
 
 Start directly here with zero cost investment:
 
-### Step 1: TopAI.tools — 🟡 UP NEXT
+### Step 1: LinkedIn Company Page & GitHub Organization — 🟡 UP NEXT
 - **Status:** 🟡 **Up Next (Resume Here)**
-- **URL:** [https://topai.tools/submit](https://topai.tools/submit)
-- **Cost:** **100% Free**
-- **Purpose:** Free AI tool discovery directory with clean search crawl indexing.
+- **Cost:** **100% Free (DA 98 & DA 96)**
+- **Purpose:** Essential entity building for Google Knowledge Graph and Organization schema validation (`sameAs`).
 
-### Step 2: SuperLaunch (Indian Startup Directory)
+### Step 2: SaaSworthy (Free SaaS Vendor Listing)
+- **Status:** ⚪ Pending
+- **URL:** [https://www.saasworthy.com/list-your-product](https://www.saasworthy.com/list-your-product)
+- **Cost:** **100% Free (DA 65+)**
+- **Purpose:** Fast-growing Indian/global B2B & AI software directory.
+
+### Step 3: SuperLaunch (Indian Startup Directory)
 - **Status:** ⚪ On Hold (Requires DPIIT Certificate Upload)
 - **URL:** [https://superlaunch.in/submit](https://superlaunch.in/submit)
 - **Cost:** **100% Free**
 - **Purpose:** Startup India verified badge and directory listing.
-
-### Step 3: LinkedIn Company Page & GitHub Organization
-- **Status:** ⚪ Pending
-- **Cost:** **100% Free (DA 98 & DA 96)**
-- **Purpose:** Essential entity building for Google Knowledge Graph and Organization schema validation.
 
 ---
 
@@ -131,11 +140,11 @@ Start directly here with zero cost investment:
 - [x] **Product Hunt Launch** (Live launch page & product profile created: DA 91)
 - [x] **TechProductIndia** (Submitted & In Review - Free Made-in-India listing)
 - [x] **AlternativeTo** (Submitted & Queued - DA 81 crowdsourced comparison page)
-- [ ] **TopAI.tools** (Free AI directory listing)
-- [ ] **SuperLaunch** (Free Indian startup index - On hold for DPIIT)
+- [x] **SaaSHub** (Submitted & Pending Approval - DA 70+ software directory: `saashub.com/careernest`)
 - [ ] **LinkedIn Company Page** (Brand authority + `sameAs` schema link: DA 98)
 - [ ] **GitHub Org Profile** (DA 96 profile with open-source ATS template)
-- [ ] **SaaS Review Sites** (G2, Capterra, SaaSworthy, GoodFirms free vendor listings)
+- [ ] **SaaS Review Sites** (SaaSworthy, G2, Capterra, GoodFirms free vendor listings)
+- [ ] **SuperLaunch** (Free Indian startup index - On hold for DPIIT)
 
 ### Tier B: Content & PR (100% Free, Highest Value Links)
 - [ ] Pitch **Naukri Blog Guest Post** (`naukri.com/blog/write-for-naukri/`)
